@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <title>Forms</title> 
+<style> body{ 
+    background-color: purple; 
+} 
+#form{ 
+    background-color: white;     margin-left: 100px;     margin-right: 100px;     padding: 20px;     text-align: center; 
+} 
+h1{ 
+    text-align: center; 
+} 
+</style> 
+</head> 
+<body> 
+    <!-- PHP Backend receives the form --> 
+    <div id = "form"> 
+        <h1>Forms</h1> 
+        <form action="backend.php"> 
+            <label for="fullname"> Full Name </label> 
+            <div> 
+                <input type="text" name="myName" id="fullname"> 
+            </div>             <br> 
+            <div> 
+                <label for="Continent">Continent</label> 
+                <select name="model" id="Continent"> 
+                    <option value="North America">North America</option> 
+                    <option value="South America">South America</option> 
+                    <option value="Africa">Africa</option> 
+                    <option value="Asia">Asia</option> 
+                    <option value="Australia">Australia</option> 
+                    <option value="Antartica">Antartica</option> 
+                    <option value="Default" selected>None</option> 
+                </select> 
+            </div> 
+            <br> 
+            <label for="myEmail"> Email </label> 
+            <div> 
+                <input type="email" name="myEmail"> 
+            </div> 
+            <br> 
+            <label for="myEligibility"> Are you an Indian Citizen? </label> 
+            <div> 
+                <input type="checkbox" name="myEligibility"> 
+            </div> 
+            <br> 
+            <label for="myGender"> Gender </label> 
+            <div> 
+                Male <input type="radio" name="myGender"> 
+                Female <input type="radio" name="myGender"> 
+                Rather Not Say <input type="radio" name="myGender"> 
+            </div> 
+            <br> 
+            <label for="myText"> Write a Review </label> 
+            <div> 
+                <br><textarea name="myText" cols="90" rows="3"></textarea> 
+            </div> 
+            <br> 
+            <label for="Rating"> Rating </label> 
+            <div> 
+                5 stars <input type="radio" name="Rating"> 
+                4 stars <input type="radio" name="Rating"> 
+                3 stars <input type="radio" name="Rating"> 
+                2 stars <input type="radio" name="Rating"> 
+                1 star <input type="radio" name="Rating"> 
+            </div>             <br> 
+            <div> 
+                <input type="submit" value="Submit Now"> 
+                <input type="reset" value="Reset Now">             </div> 
+        </form> 
+    </div> 
+</body> 
+</html>
